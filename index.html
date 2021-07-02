@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/style.css" type="text/css" rel="stylesheet">
+    <script src="src/script.js"></script>
+    <title>Trade history</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="head">
+            <h2>Please fill the data:</h2>
+        </div>
+        <div class="input" id="input">
+            <input v-model="date" placeholder="date" />
+            <input v-model="order_type" placeholder="Order Type" />
+            <input v-model="market" placeholder="Pair" />
+            <input v-model="size" placeholder="Ammount" />
+            <input v-model="price" placeholder="Price" />
+            <input v-model="fee" placeholder="Date" />
+            <input v-model="fee" placeholder="Fee" />
+            <input v-model="result" placeholder="Result" />
+            <div id="button">
+                <button id="submit">Submit</button>
+            </div>
+            <div class="table_data"></div>
+        </div>
+</body>
+
+</html>
